@@ -1,5 +1,32 @@
 {
-    "manifest_verison": 2,
+    "manifest_version": 2,
     "name": "Instant Share",
-    "version": "0.1"
+    "version": "0.1",
+
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["content.js"]
+
+        }
+    ],
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "index.html"
+    },
+
+    "permissions": [
+        "activeTab",
+        "http://c6c603435688.ngrok.io/api"
+    ],
+
+    "background": {
+        "scripts": ["background.js"]
+    } 
+
+
+
 }

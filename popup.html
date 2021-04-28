@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Share</title>
+    <style>
+        #container {
+            width: 500px;
+            height: fit-content;
+            display: flex;
+        }
+
+        #add {
+            width: fit-content;
+            height: 200px;
+            padding-right: 25px;
+            margin-right: 25px;
+            border-right: 2px solid black;
+        }
+
+        #search {
+            width: fit-content;
+            height: 200px;
+        }
+
+        .search-label {
+            font-weight: bold;
+        }
+
+        .details {
+            font-weight: normal;
+            font-size: 1.5em;
+        }
+
+        .updated-details {
+            font-weight: normal;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="add">
+            <form id="add_form">
+                <input class="add_rec_input" type="text" name="email" id="email" placeholder="Email">
+                <br>
+                <input class="add_rec_input" type="text" name="password" id="password" placeholder="Password">
+                <br>
+                
+                <br>
+                <br>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+        <!--<div id="search">
+            <form id="search_form">
+                <input type="text" id="search_url" placeholder="Search for Url">
+                <button id="search_for_url">Search</button>
+                <br>
+                <br>
+                <span class="search-label">Folder:
+                    <span class="details" id="details-folder"></span>
+                    <input class="updated-details" type="text" id="update-folder">
+                </span>
+                <br>
+                <span class="search-label">URL:
+                    <span class="details" id="details-url"></span>
+                    <input class="updated-details" type="text" id="update-url">
+                </span>
+                <br>
+                <br>
+                <button type="submit" id="edit-url">Edit</button>
+                <button id="delete-url">Delete</button>
+            </form>
+        </div>-->
+    </div>
+
+    <script src="./popup.js"></script>
+</body>
+
+</html>

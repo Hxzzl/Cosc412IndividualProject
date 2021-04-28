@@ -1,9 +1,11 @@
-var rootURL = "http://c6c603435688.ngrok.io/api";
+
+ // The root URL for the RESTful services
+var rootURL = "http://localhost/cellar/api/wines";
 
 var currentWine;
 
 // Retrieve wine list when application starts 
-getGroups();
+findAll();
 
 // Nothing to delete in initial application state
 $('#btnDelete').hide();
@@ -64,8 +66,8 @@ function newWine() {
 	renderDetails(currentWine); // Display empty form
 }
 
-function getGroups() {
-	console.log('getGroups');
+function findAll() {
+	console.log('findAll');
 	$.ajax({
 		type: 'GET',
 		url: rootURL,

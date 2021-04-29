@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+    include 'dbconnect.php';
+?>
+
 <head>
+
+    <script 
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+    ></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instant Share</title>
@@ -42,6 +53,12 @@
 </head>
 
 <body>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
     <div id="container">
         <div id="add">
             <form id="add_form">
@@ -49,15 +66,15 @@
                 <br>
                 <input class="add_rec_input" type="text" name="password" id="password" placeholder="Password">
                 <br>
-                
                 <br>
                 <br>
-                <button type="submit">Add</button>
             </form>
+            <button id="submit">Submit</button>
+            <div id="output"></div>
         </div>
-        <!--<div id="search">
+        <div id="search">
             <form id="search_form">
-                <input type="text" id="search_url" placeholder="Search for Url">
+                <input type="text" id="search_group" placeholder="Search for Group">
                 <button id="search_for_url">Search</button>
                 <br>
                 <br>
@@ -75,7 +92,7 @@
                 <button type="submit" id="edit-url">Edit</button>
                 <button id="delete-url">Delete</button>
             </form>
-        </div>-->
+        </div>
     </div>
 
     <script src="./popup.js"></script>

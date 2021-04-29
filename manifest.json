@@ -2,6 +2,7 @@
     "manifest_version": 2,
     "name": "Instant Share",
     "version": "0.1",
+    "content_security_policy":"script-src 'self' https://code.jquery.com/jquery-3.6.0.min.js; object-src 'self'",
 
     "content_scripts": [
         {
@@ -15,12 +16,12 @@
 
     "browser_action": {
         "default_icon": "icon.png",
-        "default_popup": "index.html"
+        "default_popup": "popup.html"
     },
 
     "permissions": [
         "activeTab",
-        "http://c6c603435688.ngrok.io/api"
+        "http://c6c603435688.ngrok.io/api/"
     ],
 
     "background": {

@@ -61,37 +61,37 @@
     <div ></div>
     <div id="container">
         <div id="add">
-            <form id="add_form">
-                <input class="add_rec_input" type="text" name="email" id="email" placeholder="Email">
+            <form name="add_form">
+                <input type="email" value=""  id="email" placeholder="Email">
                 <br>
-                <input class="add_rec_input" type="text" name="password" id="password" placeholder="Password">
+                <input type="text" value="" id="password" placeholder="Password">
                 <br>
                 <br>
+                <button type="submit" id="submit">Submit</button>
                 <br>
             </form>
-            <button id="submit">Submit</button>
-            <div id="output"></div>
+            <output id="output"></output>
         </div>
         <div id="search">
             <form id="search_form">
                 <input type="text" id="search_group" placeholder="Search for Group">
                 <button id="search_for_url">Search</button>
+            </form>
                 <br>
                 <br>
                 <span class="search-label">Folder:
-                    <span class="details" id="details-folder"></span>
-                    <input class="updated-details" type="text" id="update-folder">
+                    <div id="details-folder"></div>
+                    <div id="update-folder"></div>
                 </span>
                 <br>
                 <span class="search-label">URL:
-                    <span class="details" id="details-url"></span>
-                    <input class="updated-details" type="text" id="update-url">
+                    <div id="details-url"></div>
+                    <div id="update-url"></div>
                 </span>
                 <br>
                 <br>
                 <button type="submit" id="edit-url">Edit</button>
                 <button id="delete-url">Delete</button>
-            </form>
         </div>
     </div>
 
